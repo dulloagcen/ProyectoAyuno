@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="la-perdida-de-peso.png">
+    <title>Act. Física</title>
+    <!-- Libreria Animación Animate.css -->
+    <link rel="stylesheet" href="./Public/Css/animate.css">
+    <link rel="stylesheet" href="./Public/Css/actFisica.css">
+</head>
+<body>
+    
+    <header>
+        <nav>
+          <a href="logros.html">Logros</a>
+          <a href="pesos.html">Pesos</a>
+          <a href="planesAyuno.html">Planes</a>
+          <a href="actFisica.html">Act. Física</a>
+          <a href="enfermedades.html">Enfermedades</a>
+          <a href="recetas.html">Recetas</a>  
+        </nav>
+          <div class="navUsuario">
+            <img src="./Public/Img/usuario2.png" width="25" height="25" alt="">
+            <br>
+          <a href="perfil.html" id="perfil">Perfil</a>
+          </div>  
+      </header>
+      <div class="bannerActFisica">
+        <h1 class="tituloActFisica wow zoomIn" data-wow-delay="0.3s" data-wow-duration="2s">Act. Física</h1>
+      </div>         
+
+      <main>
+        <section class="sctRegistroActividad">
+            <div>
+                <h2 id="ttlFormulario">Registro de Actividad Física</h2>
+                <form action="" id="frmActividad">                
+                <div class="row">
+                    
+                    <div class="column">
+
+                        <div class="registroAct">
+                            <label for="txtFechaInicio">Fecha Inicio</label>
+                             <input type="date" id="txtFechaInicio" required>
+                        </div>
+
+                        <div class="registroAct">
+                          <label for="txtFechaFinal">Fecha Final</label>
+                           <input type="date" id="txtFechaFinal" required>
+                        </div>
+
+                        <div class="registroAct">
+                          <label for="txtHoraInicio">Hora Inicio</label>
+                          <input type="time" id="txtHoraInicio" required>
+                        </div>
+
+                        <div class="registroAct">
+                            <label for="txtHoraFinal">Hora Final</label>
+                            <input type="time" id="txtHoraFinal" required>
+                        </div>
+
+                        <div class="registroAct">
+                            <label for="sleActividadFisica">Actividad Física</label>
+                            <select name="" id="sleActividad" required>
+                                <option value="">--Seleccione--</option>
+                                <option value="1">Ciclismo</option>
+                                <option value="2">Gimnasia</option>
+                                <option value="3">Natación</option>
+                                <option value="4">Senderismo</option>
+                                <option value="5">Fútbol</option>
+                            </select>
+                        </div>
+
+                        <div class="registroAct">
+                            <label for="txtOtraActividad">Otra Actividad Física</label>
+                            <input type="text" id="txtOtraActividad">
+                        </div>                         
+                    </div>
+                  </div>
+
+                <button class="tipoBoton" id="registrarDatos" type="button">Registrar</button>
+          
+                </form>
+            </div>
+
+
+            <div class="sombra">
+                <img src="./Public/Img/couple-running-in-nature.jpg" alt="">
+            </div>
+            
+        </section>
+
+        <section class="sctTablaActFisica">
+            <div>
+                <table id="tablaActFisica">
+                    <thead id="thTablaActFisica">
+                        <tr>
+                            <th>Tipo</th>
+                            <th>Fecha</th>
+                            <th>Horas</th>                             
+                        </tr>
+                    </thead>
+                    <tbody id="tbTablaActFisica">            
+                        <tr>
+                            <td>Ciclismo</td>
+                            <td>04/10/2022</td>
+                            <td>3</td>
+                        </tr>
+                        <tr>
+                            <td>Gimnasia</td>
+                            <td>06/10/2022</td>
+                            <td>2</td>
+                        </tr>
+                        <tr>
+                            <td>Natación</td>
+                            <td>11/10/2022</td>
+                            <td>4</td>
+                            
+                        </tr>
+                        <tr>
+                            <td>Senderismo</td>
+                            <td>21/10/2022</td>
+                            <td>3</td>
+                        </tr>
+                        <tr>
+                            <td>Fútbol</td>
+                            <td>24/10/2022</td>
+                            <td>2</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>                      
+        </section>
+
+        <section class="graficosActFisica">
+            <div>
+                <h1>Total de Horas</h1>
+                <img src="./Public/Img/GraficoHoras.png" alt="">
+            </div>
+            <div>
+                <h1>Total de Días</h1>
+                <img src="./Public/Img/GraficoDias.png" alt="">
+            </div>
+        </section>          
+      </main>
+
+      <footer class="contenedorFooter">
+        <br>
+        <h3>2022 | Todos los derechos reservados </h3>
+        <br>
+      </footer>
+
+
+        <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+        <script src="./Public/Js/Controller/controladorActFisica.js"></script>
+      <!-- Libreria WOW.JS -->
+        <script src="./Public/Js/Controller/wow.js"></script>
+        <script>
+        new WOW().init();
+        </script>
+
+    
+</body>
+</html>
